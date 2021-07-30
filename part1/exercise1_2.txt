@@ -1,0 +1,4 @@
+      ~  docker ps -as                                                                                                                   ✔  10:27:35 
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+      ~  docker images                                                                                                                   ✔  10:27:44 
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
