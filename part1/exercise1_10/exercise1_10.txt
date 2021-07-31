@@ -1,0 +1,18 @@
+      ~/De/devops-with-docker/part1     main  docker images                                                              ✔  20:42:30 
+REPOSITORY                          TAG       IMAGE ID       CREATED          SIZE
+curler                              latest    c0f8cd283eb4   26 minutes ago   115MB
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   4 months ago     83MB
+web-server                          latest    7a1932bcdd70   4 months ago     15.7MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   4 months ago     15.7MB
+devopsdockeruh/simple-web-service   latest    99f995eeaa58   4 months ago     10.1MB
+devopsdockeruh/pull_exercise        latest    d9854bc0e13a   2 years ago      75.3MB
+      ~/De/devops-with-docker/part1     main  docker container run -p 8080:8080 web-server                               ✔  20:42:33 
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2021/07/31 - 17:43:05 | 200 |      1.0438ms |      172.17.0.1 | GET      "/"
