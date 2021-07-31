@@ -1,0 +1,36 @@
+     ~/De/devops-with-docker/p/exercise1_8     main ?1  docker image build . -t curler                      ✔  1m 55s    20:15:33 
+[+] Building 12.4s (8/9)
+[+] Building 17.7s (10/10) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                         0.0s
+ => => transferring dockerfile: 230B                                                                                                         0.0s
+ => [internal] load .dockerignore                                                                                                            0.0s
+ => => transferring context: 2B                                                                                                              0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:18.04                                                                              2.4s
+ => [auth] library/ubuntu:pull token for registry-1.docker.io                                                                                0.0s
+ => [1/4] FROM docker.io/library/ubuntu:18.04@sha256:7bd7a9ca99f868bf69c4b6212f64f2af8e243f97ba13abb3e641e03a7ceb59e8                        2.5s
+ => => resolve docker.io/library/ubuntu:18.04@sha256:7bd7a9ca99f868bf69c4b6212f64f2af8e243f97ba13abb3e641e03a7ceb59e8                        0.0s
+ => => sha256:39a8cfeef17302cb7ce93cefe12368560fe62ef9d517808855f7bda79a1eb697 1.46kB / 1.46kB                                               0.0s
+ => => sha256:feac5306138255e28a9862d3f3d29025d0a4d0648855afe1acd6131af07138ac 26.71MB / 26.71MB                                             1.0s
+ => => sha256:7bd7a9ca99f868bf69c4b6212f64f2af8e243f97ba13abb3e641e03a7ceb59e8 1.41kB / 1.41kB                                               0.0s
+ => => sha256:07782849f2cff04e9bc29449c27d0fb2076e61e8bdb4475ec5dbc5386ed41a4f 529B / 529B                                                   0.0s
+ => => extracting sha256:feac5306138255e28a9862d3f3d29025d0a4d0648855afe1acd6131af07138ac                                                    1.4s
+ => [internal] load build context                                                                                                            0.0s
+ => => transferring context: 136B                                                                                                            0.0s
+ => [2/4] WORKDIR /usr/src/app                                                                                                               0.3s
+ => [3/4] COPY website.sh .                                                                                                                  0.0s
+ => [4/4] RUN apt-get update &&     apt-get -y install curl &&     apt-get clean &&     chmod +x website.sh                                 11.8s
+ => exporting to image                                                                                                                       0.4s
+ => => exporting layers                                                                                                                      0.4s
+ => => writing image sha256:c0f8cd283eb496fb60a9b93d3a417f48d4b375543c23f018f2c53bcc31fc9f05                                                 0.0s
+ => => naming to docker.io/library/curler                                                                                                    0.0s
+      ~/De/devops-with-docker/p/exercise1_8     main ?1  docker container run -it --rm --name foo curler        ✔  18s    20:16:12 
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+</body></html>
