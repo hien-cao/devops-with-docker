@@ -1,0 +1,20 @@
+      ~  docker container run -d --rm -it --name poo devopsdockeruh/simple-web-service:ubuntu                                            ✔  10:36:37 
+8b0e3e9b24ebb83832f0e00d327ed632130b63177baceb838be01c7579cc3326
+      ~  docker exec -it poo bash                                                                                                        ✔  10:36:41 
+root@8b0e3e9b24eb:/usr/src/app# tail -f ./text.log
+2021-07-31 07:36:44 +0000 UTC
+2021-07-31 07:36:46 +0000 UTC
+2021-07-31 07:36:48 +0000 UTC
+2021-07-31 07:36:50 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-07-31 07:36:52 +0000 UTC
+2021-07-31 07:36:54 +0000 UTC
+2021-07-31 07:36:56 +0000 UTC
+2021-07-31 07:36:58 +0000 UTC
+2021-07-31 07:37:00 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-07-31 07:37:02 +0000 UTC
+2021-07-31 07:37:04 +0000 UTC
+2021-07-31 07:37:06 +0000 UTC
+2021-07-31 07:37:08 +0000 UTC
+2021-07-31 07:37:10 +0000 UTC
