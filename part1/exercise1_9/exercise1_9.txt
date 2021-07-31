@@ -1,0 +1,27 @@
+      ~/Desktop/devops-with-docker/part1/exercise1_9     main  touch text.log                                                                                   ✔  20:38:50 
+      ~/Desktop/devops-with-docker/part1/exercise1_9     main ?1  docker container run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
+Unable to find image 'devopsdockeruh/simple-web-service:latest' locally
+latest: Pulling from devopsdockeruh/simple-web-service
+cd2b813b068d: Already exists
+4f4fb700ef54: Already exists
+Digest: sha256:20282b20abae04beefa9637bb565943330ed5d085a22fcf8c4878abad80be712
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:latest
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+^C%
+      ~/De/devops-with-docker/p/exercise1_9     main ?1  cat text.log                                                                                2 ✘  18s    20:39:24 
+2021-07-31 17:39:11 +0000 UTC
+2021-07-31 17:39:13 +0000 UTC
+2021-07-31 17:39:15 +0000 UTC
+2021-07-31 17:39:17 +0000 UTC
+2021-07-31 17:39:19 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-07-31 17:39:21 +0000 UTC
+2021-07-31 17:39:23 +0000 UTC
