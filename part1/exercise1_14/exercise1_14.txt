@@ -1,0 +1,8 @@
+     ~/De/devops-with-docker/p/exercise1_14     main ?1  docker container run --rm -d -p 5000:5000 example-frontend     ✔  22:27:38 
+0156e0152efa76eff4cfc9ee0a5e66c3e3b6e8dae3830ab3267cdd950deab20c
+      ~/De/devops-with-docker/p/exercise1_14     main ?1  docker container run --rm -d -p 8080:8080 example-backend      ✔  22:27:49 
+180a67ec6da44dc7b522ef8ad765e6e11acc8c839f5ddf005fac16f5ea9daa3d
+      ~/De/devops-with-docker/p/exercise1_14     main ?1  docker ps                                                      ✔  22:27:55 
+CONTAINER ID   IMAGE              COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+180a67ec6da4   example-backend    "./server"               4 seconds ago    Up 4 seconds    0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   bold_williams
+0156e0152efa   example-frontend   "serve -s -l 5000 bu…"   11 seconds ago   Up 10 seconds   0.0.0.0:5000->5000/tcp, :::5000->5000/tcp   amazing_feistel
