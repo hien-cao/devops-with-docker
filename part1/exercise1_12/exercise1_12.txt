@@ -1,0 +1,24 @@
+      ~/De/devops-with-docker/p/exercise1_12/example-frontend     main ?1  docker image build . -t example-frontend
+[+] Building 142.6s (14/14) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                         0.0s
+ => => transferring dockerfile: 521B                                                                                                         0.0s
+ => [internal] load .dockerignore                                                                                                            0.0s
+ => => transferring context: 34B                                                                                                             0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:18.04                                                                              0.6s
+ => [1/9] FROM docker.io/library/ubuntu:18.04@sha256:7bd7a9ca99f868bf69c4b6212f64f2af8e243f97ba13abb3e641e03a7ceb59e8                        0.0s
+ => CACHED [2/9] WORKDIR /usr/src/app                                                                                                        0.0s
+ => [internal] load build context                                                                                                            0.0s
+ => => transferring context: 708.94kB                                                                                                        0.0s
+ => [3/9] COPY . .                                                                                                                           0.0s
+ => [4/9] RUN apt-get update && apt-get install -y curl                                                                                     10.6s
+ => [5/9] RUN curl -sL https://deb.nodesource.com/setup_14.x | bash                                                                         11.4s
+ => [6/9] RUN apt install -y nodejs                                                                                                          9.4s
+ => [7/9] RUN npm install                                                                                                                   61.4s
+ => [8/9] RUN npm run build                                                                                                                 25.7s
+ => [9/9] RUN npm install -g serve                                                                                                           7.0s
+ => exporting to image                                                                                                                      16.1s
+ => => exporting layers                                                                                                                     16.1s
+ => => writing image sha256:f1a956f471a6f49841fcee27d430b40d2fcbb6542a133043882bffb74c0f3461                                                 0.0s
+ => => naming to docker.io/library/example-frontend                                                                                          0.0s
+      ~/De/devops-with-docker/p/exercise1_12/example-frontend     main ?1  docker container run -p 5000:5000 example-frontend
+INFO: Accepting connections at http://localhost:5000
