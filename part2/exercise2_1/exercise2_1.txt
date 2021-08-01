@@ -1,0 +1,34 @@
+     ~/De/devops-with-docker/part2/exercise2_1     main ?1  touch text.log                                              ✔  09:08:55 
+      ~/De/devops-with-docker/part2/exercise2_1     main ?1  ls                                                          ✔  09:09:09 
+docker-compose.yml text.log
+      ~/De/devops-with-docker/part2/exercise2_1     main ?1  docker-compose up                                           ✔  09:09:15 
+[+] Running 2/2
+ ⠿ Network exercise2_1_default                 Created                                                                                       0.3s
+ ⠿ Container exercise2_1_simple-web-service_1  Started                                                                                       0.8s
+Attaching to simple-web-service_1
+simple-web-service_1  | Starting log output
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+^CGracefully stopping... (press Ctrl+C again to force)
+[+] Running 1/1
+ ⠿ Container exercise2_1_simple-web-service_1  Stopped                                                                                       0.2s
+canceled
+      ~/De/devops-with-docker/part2/exercise2_1     main ?1  docker-compose down                            INT ✘  15s    09:09:41 
+[+] Running 2/2
+ ⠿ Container exercise2_1_simple-web-service_1  Removed                                                                                       0.1s
+ ⠿ Network exercise2_1_default                 Removed                                                                                       0.3s
+      ~/De/devops-with-docker/part2/exercise2_1     main ?1  cat text.log                                                ✔  09:09:49 
+2021-08-01 06:09:29 +0000 UTC
+2021-08-01 06:09:31 +0000 UTC
+2021-08-01 06:09:33 +0000 UTC
+2021-08-01 06:09:35 +0000 UTC
+2021-08-01 06:09:37 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-08-01 06:09:39 +0000 UTC
+2021-08-01 06:09:41 +0000 UTC
