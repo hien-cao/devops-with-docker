@@ -1,0 +1,6 @@
+     ~/De/devops-with-docker/part2/exercise2_2     main ?1  docker-compose up                                           ✔  09:53:54 
+[+] Running 2/2
+ ⠿ Network exercise2_2_default          Created                                                                                              0.3s
+ ⠿ Container exercise2_2_web-service_1  Started                                                                                              0.8s
+Attaching to web-service_1
+web-service_1  | [GIN] 2021/08/01 - 06:54:26 | 200 |      30.961µs |      172.20.0.1 | GET      "/"
