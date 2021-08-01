@@ -1,0 +1,8 @@
+      ~/De/devops-with-docker/part2/exercise2_5/scaling-exercise     main ?1  docker-compose up -d --scale compute=3     ✔  11:49:51 
+[+] Running 6/6
+ ⠿ Network scaling-exercise_default      Created                                                                                             0.3s
+ ⠿ Container calculator                  Started                                                                                             1.6s
+ ⠿ Container load-balancer               Started                                                                                             1.9s
+ ⠿ Container scaling-exercise_compute_3  Started                                                                                             1.5s
+ ⠿ Container scaling-exercise_compute_1  Started                                                                                             1.2s
+ ⠿ Container scaling-exercise_compute_2  Started                                                                                             1.7s
