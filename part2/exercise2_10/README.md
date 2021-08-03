@@ -1,0 +1,2 @@
+## Exercise 2_10
+I have no issue with the frontend and backend project after exercise 2_9. I had an issue with the CORS in exercise 2_9, but it was fixed there. What I did is I removed the environment variable definition which removed 'REACT_APP_BACKEND_URL' for the Dockerfile in the frontend, and removed 'REQUEST_ORIGIN' in the backend. Please refer to the exercise 2_9 for the code, all the buttons are working well.
