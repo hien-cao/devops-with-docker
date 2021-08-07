@@ -45,7 +45,7 @@ CMD ["serve", "-s", "-l", "5000", "build"]
 ### Step 3
 Edit the `Dockerfile` of the backend by adding non-root user and give the non-root user the ownership of the workdir in the image.
 
-Dockerfile for the frontend
+Dockerfile for the backend
 
 ```
 # Dockerfile for backend
